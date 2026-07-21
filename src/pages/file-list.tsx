@@ -1,0 +1,3 @@
+"use client";
+import { ResourcePage } from "@neton/application-front-resource";
+export default function Page() { return <ResourcePage config={{ resourceKey: "infra-file", eyebrow: "OBJECT STORAGE", title: "文件管理", description: "查看文件元数据与访问地址。上传继续走预签名直传链路，不让大文件穿过 Next 代理。", endpoint: "/infra/file", permissions: { page: "infra:file:query", delete: "infra:file:delete" }, fields: [{ key: "name", label: "文件名" }, { key: "configId", label: "存储配置", format: "mono" }, { key: "mimeType", label: "类型" }, { key: "size", label: "大小(Byte)" }, { key: "url", label: "访问地址" }, { key: "createdAt", label: "创建时间", format: "date" }, { key: "name", label: "文件名", filter: true, table: false }, { key: "configId", label: "配置 ID", filter: true, table: false }] }} />; }
