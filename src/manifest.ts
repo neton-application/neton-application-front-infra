@@ -4,7 +4,6 @@ export default defineFrontModule({
   id: "infra",
   contractVersion: "1.0.0",
   pages: [
-    { key: "infra/config/index", path: "/infra/config", entry: "config-list", rendering: "client" },
     { key: "infra/file/index", path: "/infra/file", entry: "file-list", rendering: "client" },
     { key: "infra/fileConfig/index", path: "/infra/file-config", entry: "file-config-list", rendering: "client" },
     { key: "infra/job/index", path: "/infra/job", entry: "job-list", rendering: "client" },
