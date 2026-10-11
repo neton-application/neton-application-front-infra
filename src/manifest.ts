@@ -3,6 +3,10 @@ import { defineFrontModule } from "@neton/application-front-contract";
 export default defineFrontModule({
   id: "infra",
   contractVersion: "1.0.0",
+  locales: [
+    { lang: "zh-CN", entry: "zh-CN" },
+    { lang: "en-US", entry: "en-US" },
+  ],
   pages: [
     { key: "infra/file/index", path: "/infra/file", entry: "file-list", rendering: "client" },
     { key: "infra/fileConfig/index", path: "/infra/file-config", entry: "file-config-list", rendering: "client" },
