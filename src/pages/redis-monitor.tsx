@@ -7,7 +7,7 @@ import { Button, DataTable, PageHeader, type DataColumn } from "@neton/applicati
 interface Stat { command: string; calls: number; usec: number }
 interface Monitor { info: Record<string, string>; dbSize: number; commandStats: Stat[] }
 export default function RedisMonitorPage() {
-  const t = useT("infra"); const fmt = useFormat(); const describeError = useDescribeError();
+  const t = useT("infra"); const fmt = useFormat(); const describeError = useDescribeError("infra");
   const query = useQuery({ queryKey: ["infra-redis"], queryFn: () => apiFetch<Monitor>("/admin/infra/redis/get-monitor-info"), refetchInterval: 30_000 });
   const info = query.data?.info ?? {};
   const cards = [[t("redis.card.version"), info.redis_version || "N/A"], [t("redis.card.keys"), String(query.data?.dbSize ?? 0)], [t("redis.card.clients"), info.connected_clients || "0"], [t("redis.card.memory"), info.used_memory_human || "0B"], [t("redis.card.uptimeDays"), info.uptime_in_days || "0"], [t("redis.card.mode"), info.redis_mode || "-"]];
