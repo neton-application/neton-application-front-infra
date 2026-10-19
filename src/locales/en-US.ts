@@ -156,8 +156,10 @@ const messages: Record<string, string> = {
   "error.ACCESS_DENIED": "You are not allowed to use this file",
   "error.INVALID_ARGUMENT": "The file reference is invalid",
   "error.INVALID_URL": "The file URL is invalid",
-  "error.UNSUPPORTED_SCHEME": "Only http/https file URLs are supported",
-  "error.FORBIDDEN_HOST": "Fetching files from this address is not allowed",
+  "error.URL_SCHEME_FORBIDDEN": "Only http and https URLs are supported",
+  "error.URL_TARGET_FORBIDDEN": "This address points to a private or reserved network and is not allowed",
+  "error.URL_PORT_FORBIDDEN": "This port is not allowed",
+  "error.URL_RESOLVE_FAILED": "The host name of this address could not be resolved",
   "error.FETCH_FAILED": "Failed to fetch the remote file",
   "error.NOT_AVAILABLE": "Importing files from URLs is not available in this deployment",
 };

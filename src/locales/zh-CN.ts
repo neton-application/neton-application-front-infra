@@ -156,8 +156,10 @@ const messages: Record<string, string> = {
   "error.ACCESS_DENIED": "无权使用该文件",
   "error.INVALID_ARGUMENT": "文件引用参数无效",
   "error.INVALID_URL": "文件地址无效",
-  "error.UNSUPPORTED_SCHEME": "文件地址只支持 http/https",
-  "error.FORBIDDEN_HOST": "不允许从该地址获取文件",
+  "error.URL_SCHEME_FORBIDDEN": "只支持 http / https 地址",
+  "error.URL_TARGET_FORBIDDEN": "该地址指向内网或保留地址，不允许访问",
+  "error.URL_PORT_FORBIDDEN": "该地址的端口不允许访问",
+  "error.URL_RESOLVE_FAILED": "无法解析该地址的域名",
   "error.FETCH_FAILED": "获取远端文件失败",
   "error.NOT_AVAILABLE": "当前部署不支持从网址转存文件",
 };
