@@ -160,6 +160,7 @@ const messages: Record<string, string> = {
   "error.URL_TARGET_FORBIDDEN": "该地址指向内网或保留地址，不允许访问",
   "error.URL_PORT_FORBIDDEN": "该地址的端口不允许访问",
   "error.URL_RESOLVE_FAILED": "无法解析该地址的域名",
+  "error.TOO_MANY_REDIRECTS": "该地址重定向超过 5 次",
   "error.FETCH_FAILED": "获取远端文件失败",
   "error.NOT_AVAILABLE": "当前部署不支持从网址转存文件",
 };

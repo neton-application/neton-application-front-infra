@@ -160,6 +160,7 @@ const messages: Record<string, string> = {
   "error.URL_TARGET_FORBIDDEN": "This address points to a private or reserved network and is not allowed",
   "error.URL_PORT_FORBIDDEN": "This port is not allowed",
   "error.URL_RESOLVE_FAILED": "The host name of this address could not be resolved",
+  "error.TOO_MANY_REDIRECTS": "The address redirected more than 5 times",
   "error.FETCH_FAILED": "Failed to fetch the remote file",
   "error.NOT_AVAILABLE": "Importing files from URLs is not available in this deployment",
 };
