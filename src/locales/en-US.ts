@@ -143,6 +143,8 @@ const messages: Record<string, string> = {
   "error.FILE_NOT_FOUND": "The file does not exist",
   "error.FILE_DELETED": "The file has been deleted",
   "error.FILE_FORBIDDEN": "You are not allowed to access this file",
+  "error.MEDIA_URL_RATE_LIMITED": "Too many image refreshes, please try again later",
+  "error.MEDIA_VARIANT_UNKNOWN": "Unsupported image size",
   "error.FILE_CONFIG_NOT_FOUND": "The file configuration does not exist",
   "error.JOB_NOT_FOUND": "The scheduled job does not exist",
   "error.API_ERROR_LOG_NOT_FOUND": "The error log does not exist",

@@ -143,6 +143,8 @@ const messages: Record<string, string> = {
   "error.FILE_NOT_FOUND": "文件不存在",
   "error.FILE_DELETED": "文件已删除",
   "error.FILE_FORBIDDEN": "无权访问该文件",
+  "error.MEDIA_URL_RATE_LIMITED": "图片地址刷新过于频繁，请稍后再试",
+  "error.MEDIA_VARIANT_UNKNOWN": "不支持的图片规格",
   "error.FILE_CONFIG_NOT_FOUND": "文件配置不存在",
   "error.JOB_NOT_FOUND": "定时任务不存在",
   "error.API_ERROR_LOG_NOT_FOUND": "错误日志不存在",
