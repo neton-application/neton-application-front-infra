@@ -32,6 +32,8 @@
     "typescript": "^7.0.2"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:browser": "node tests/browser-acceptance.mjs"
   }
 }
