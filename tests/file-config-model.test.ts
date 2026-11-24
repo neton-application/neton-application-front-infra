@@ -11,8 +11,9 @@ test("local save removes invisible S3 settings and normalizes input", () => {
 });
 test("S3 edit keeps typed settings and never modifies cached server state", () => {
   const form = emptyForm(); form.storage = 1; form.config.bucket = "media"; form.config.basePath = "old-local";
-  const record = { ...form, id: 1, valid: true };
+  const record = { ...form, id: 1, master: 1, valid: true };
   const editing = editForm(record); editing.config.bucket = "new";
+  assert.equal("master" in saveBody(editing), false);
   assert.equal(record.config.bucket, "media"); assert.equal(saveBody(editing).config.basePath, ""); assert.equal(saveBody(editing).config.bucket, "new");
 });
 test("invalid legacy records can be repaired without exposing raw config", () => {
