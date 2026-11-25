@@ -137,6 +137,7 @@ const messages: Record<string, string> = {
   "file.field.config": "Storage config",
   "file.field.mimeType": "Type",
   "file.field.size": "Size (bytes)",
+  "file.field.path": "Storage path",
   "file.field.url": "URL",
   "file.field.createdAt": "Created",
   "file.field.configId": "Config ID",

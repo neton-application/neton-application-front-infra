@@ -137,6 +137,7 @@ const messages: Record<string, string> = {
   "file.field.config": "存储配置",
   "file.field.mimeType": "类型",
   "file.field.size": "大小(Byte)",
+  "file.field.path": "存储路径",
   "file.field.url": "访问地址",
   "file.field.createdAt": "创建时间",
   "file.field.configId": "配置 ID",
